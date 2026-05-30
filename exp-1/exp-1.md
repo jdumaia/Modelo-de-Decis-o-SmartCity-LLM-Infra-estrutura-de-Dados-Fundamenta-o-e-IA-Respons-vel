@@ -228,7 +228,6 @@ Vou assumir que quer uma página web simples (HTML+JS) que:
 Como não tenho o esquema exato dos dados desses endpoints, deixo o código preparado e com comentários onde deve ajustar os nomes dos campos (por exemplo lat, lon, valor, timestamp, etc.).
 
 ```html
-html
 <!DOCTYPE html>
 <html lang="pt">
 <head>
