@@ -39,7 +39,9 @@ O LLM:
 - Aparentemente, conseguiu aceder aos dados e mostra um dashboard interativo.
  - O Dashboard apresenta o consumo de água do dispositivo C16SC000825R (SMAS/Câmara Municipal da Maia), com dados entre 14 e 24 de abril de 2026.
  - Para além do dashboard o LLM apresenta algumas análises sobre os dados, por exemplo sobre picos de consumo.
+
 Os dados apresentados parecem alinhados com os dados apresentados na página [https://baze.cm-maia.pt/BaZe/fsmas.php](https://baze.cm-maia.pt/BaZe/fsmas.php) embora esta tenha demorado bastante tempo a carregar e só analisei a informação apresentada nas tabelas.
+
 O dashboard apresenta informação como por exemplo:
 - Consumo diário (litros),
 - Consumo horário (litros) - todos os dias e Perfil médio por hora do dia.
