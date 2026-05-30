@@ -22,6 +22,8 @@ Done
 
 Tenho os dados que precisava. Agora vou criar um dashboard interativo com dados reais da API do BaZe, mostrando o consumo de água no município da Maia.
 
+![dashboard](exp-c1.png)
+
 Aqui está o dashboard com dados reais da plataforma BaZe do Município da Maia! Os dados vêm diretamente da API REST do projeto BaZe/D4Maia, com as seguintes informações:
 O que está a ser monitorizado: o caudalímetro I13JA287987, instalado pela SMAS (Serviços Municipalizados de Água e Saneamento) e transmitido via LoRaWAN.
 
