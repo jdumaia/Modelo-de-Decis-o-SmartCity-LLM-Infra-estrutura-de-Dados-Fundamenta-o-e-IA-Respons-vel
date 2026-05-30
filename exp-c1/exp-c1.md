@@ -26,13 +26,12 @@ Aqui está o dashboard com dados reais da plataforma BaZe do Município da Maia!
 O que está a ser monitorizado: o caudalímetro I13JA287987, instalado pela SMAS (Serviços Municipalizados de Água e Saneamento) e transmitido via LoRaWAN.
 
 O dashboard mostra:
-Consumo total e médio diário no período disponível (cerca de 11 dias recentes)
-Gráfico de barras diário — as barras a vermelho identificam dias com consumo acima do limiar de anomalia (média + 2 desvios-padrão), que pode indiciar fugas
-Curva acumulada do contador, mostrando a progressão da leitura total
-Indicadores de consumo máximo, mínimo e dias com comportamento anómalo
-O site BaZe monitoriza vários caudalímetros e usa o critério estatístico μ + 2σ para detetar consumos diários anómalos que possam indiciar a existência de fugas cm-maia
+- Consumo total e médio diário no período disponível (cerca de 11 dias recentes)
+- Gráfico de barras diário — as barras a vermelho identificam dias com consumo acima do limiar de anomalia (média + 2 desvios-padrão), que pode indiciar fugas
+- Curva acumulada do contador, mostrando a progressão da leitura total
+- Indicadores de consumo máximo, mínimo e dias com comportamento anómalo
 
-. Os dados têm granularidade horária e são extraídos da plataforma waterlog.digitalmetering.com.
+O site BaZe monitoriza vários caudalímetros e usa o critério estatístico μ + 2σ para detetar consumos diários anómalos que possam indiciar a existência de fugas cm-maia. Os dados têm granularidade horária e são extraídos da plataforma waterlog.digitalmetering.com.
 ```
 
 ### Conclusão
