@@ -14,7 +14,11 @@ Nas experiências realizadas foram usados os LLMs seguintes:
 - Copilot
 - Gemini
 
-Lista de experiências:
+Lista de experiências com todos os LLMs:
+- exp 1:
+- exp 2:
+
+Lista de experiências com o Claude:
 - exp 1:
 - exp 2:
 
