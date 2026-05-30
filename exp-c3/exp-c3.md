@@ -69,7 +69,7 @@ O dashboard tem quatro paineis, um mapa com a localização de sensores, informa
   - um gráfico comparativo das concentrações típicas do concelho, de NO₂, O₃, PM10, PM2.5 e SO₂ face aos limites da OMS.
 - A energia mostra dois gráficos:
   - evolução da produção fotovoltaica vs. consumo da rede nas Piscinas de Gueifães e
-  - Consumo de energia elétrica por sector no concelho.
+  - consumo de energia elétrica por sector no concelho.
 Lista os sistemas de sensores: estação meteorológica, 3 pontos de qualidade do ar, ruído, painéis fotovoltaicos, contadores de energia e estacionamento, mas não os mostra no mapa.
  
 Após várias experiências, conclui-se que o Claude tem potencial, mas na forma atual não dá garantias de obter uma resposta satisfatória/útil em todos os casos.
