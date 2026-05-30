@@ -6,12 +6,13 @@
 
 Este repositório contém toda a informação acerca das experiências que foram realizadas com LLMs e que aparecem no paper de uma forma sumariada.
 
-Nas experiências realizadas foram usados os LLMs seguintes: Claude
-ChatGPT
-Deepseek
-Perplexity
-Copilot
-Gemini
+Nas experiências realizadas foram usados os LLMs seguintes: 
+- Claude
+- ChatGPT
+- Deepseek
+- Perplexity
+- Copilot
+- Gemini
 
 
 
