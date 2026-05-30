@@ -554,7 +554,7 @@ Apresenta alguma informação acerca dos sensores (sem muito detalhe).
 
 Indica que ao analisar os endpoints de API disponíveis, os dados devolvidos incluem variáveis como Temperatura, Humidade, Pressão Atmosférica e Qualidade do Ar e apresenta uma simulação do gráfico comparativo entre os sistemas: 
 - aqui apresenta uma tabela e refere Resumo dos Dados Atuais (Estimado via API). O estimado aqui, coloca dúvidas e a tabela assume que est-meteov2, spek1, est-meteoplus e est-meteo são sensores?
-- 
+
 Apresenta sugestões para integrar os dados.
 
 Resposta pouco útil. Penso que a menos útil de todos os LLMs.
