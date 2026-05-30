@@ -25,6 +25,7 @@ Lista de experiências com o Claude usando urls e endpoints de dados da platafor
 
 <!-- [![referência](images/ref.png)](images/ref.png) -->
 <img src="images/ref.png" alt="Referência." width="100%">
+
 *Figura 1: Visualização de referência.*
 
 - exp 4:
