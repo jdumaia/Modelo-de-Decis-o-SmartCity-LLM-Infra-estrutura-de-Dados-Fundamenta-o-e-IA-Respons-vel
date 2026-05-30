@@ -463,15 +463,112 @@ Se pretende construir uma aplicação ou dashboard que consuma estes links, pode
 
 Para consultar os dados detalhados em tempo real, recomendo abrir os links diretamente, sendo que o est-meteov2 e o spek1 fornecerão o dado bruto mais recente em formato de texto.
 
-# Análise
+# Análise/Síntese
 
-| LLM        | Análise da Resposta |
-|------------|---------------------|
-| **Claude** | Mostra os passos e referências usadas. Acedeu aos endpoints do prompt. Tentou aceder a dois endpoints adicionais sem sucesso. Apresenta um dashboard interativo com 3 vistas: (1) mapa de sensores georreferenciados com 21 pontos codificados por cor, com popup por marcador e links para dados em tempo real no BaZe; (2) gráficos de temperatura, humidade, qualidade do ar e distribuição por tipo (dados simulados por falta de autenticação ao BaZe); (3) lista de sensores com inventário completo. Dashboard interessante mas com dados históricos simulados, o que levanta questões sobre a autenticidade dos restantes dados. |
-| **ChatGPT** | Criou um dashboard em código. |
-| **DeepSeek** | Não apresenta fontes, referências ou passos. Não é claro quais endpoints consultou. Indica que não consegue gerar mapa/gráfico diretamente, mas organiza a informação para o utilizador construir as visualizações. Indica 23 pontos de sensorização (Claude indica 21). Apresenta tabela com sensores (tipo inferido) e 3 sensores com problemas. Referencia links para gráficos do BaZe e páginas `base2b.htm`. Sugere uso de Leaflet/OpenLayers para mapa e Chart.js/ECharts para gráficos. Apresenta alguns emojis. |
-| **Perplexity** | Apresenta passos, referências no texto e fontes — um dos LLMs com mais detalhe nesta matéria. Consultou referências externas mas não leu diretamente os endpoints do prompt. Usou outras APIs públicas como referência para inferir os parâmetros. Apresenta estrutura recomendada, tecnologias e algum código (incompleto) para gerar mapa e gráfico. Indica que pode gerar código completo. Não consultou fontes diretamente relacionadas com o BaZe. **Resposta pouco útil.** |
-| **Copilot** | Não apresenta fontes, mas descreve como entendeu o problema e como o resolveu. Apresenta código HTML/JS mínimo. Reconhece a necessidade de conhecer a estrutura dos dados dos endpoints, mas opta por assumir o tipo de payload sem os analisar. Oferece ajustar o código ao formato real caso o utilizador forneça um exemplo de resposta JSON. |
-| **Gemini** | Não mostra passos, referências nem fontes. Percebe que dois URLs devolvem JSON e os outros são visualizações. Indica não conseguir gerar mapa dinâmico ou gráfico interativo em tempo real. Apresenta informação superficial sobre os sensores e uma tabela com dados "estimados via API", o que levanta dúvidas sobre a sua origem. Apresenta sugestões de integração. **Resposta a menos útil de todos os LLMs.** |
+### Claude
+
+Mostra informação acerca dos passos e das referências que usou para obter a resposta.
+
+Aparentemente, conseguiu aceder aos endpoints dados no prompt.
+
+Por qualquer razão, provavelmente encontrou estas referências, tentou aceder a dois endpoints adicionais, mas não conseguiu aceder aos urls.
+
+Apresenta um dashboard interativo com 3 vistas/perspectivas: 
+- Um mapa de sensores com a localização georreferenciada dos 21 pontos de sensorização do município da Maia, codificados por cor. O LLM é que escolheu a cor para separar os sensores por categorias e o mapa mostra os pontos sobre um fundo cinzento (isto pode estar relacionado com o browser). Ao clicar em qualquer marcador aparece o nome, tipo e estado do sensor. Para as estações meteorológicas também é apresentado um link direto para os dados em tempo real no portal BaZe.
+- Gráficos. O LLM indica que os gráficos incluem visualizações de temperatura, humidade relativa, qualidade do ar (PM2.5) e distribuição por tipo de sensor. Os dados das séries temporais são indicativos/simulados dado que o acesso direto aos dados históricos em tempo real requer autenticação no sistema BaZe; os dados reais estão disponíveis nos iframes do portal referenciados em cada sensor (Segundo a perspetiva do LLM. Na realidade, os dados são públicos.).  
+- Lista de sensores com o inventário de todos os sensores com tipo e estado operacional. 
+
+Apresenta um dashboard bastante interessante e interativo, mas indica que não conseguiu aceder aos dados históricos. Isto coloca imediatamente questões sobre a autenticidade/proveniência dos dados apresentados no dashboard. Neste caso, o problema parece ser que o LLM não consegue aceder aos dados por qualquer razão. Se tivesse acesso, a resposta poderia ser potencialmente bastante interessante e com um dashboard interativo.
+
+### ChatGPT
+
+Criou um dashboard em código.
+
+### DeepSeek
+
+Não apresenta fontes, referências ou os passos realizados para obter a resposta.
+
+Indica que com base nos dados dos endpoints que conseguiu aceder, mas não é claro que endpoints foram esses.
+
+Também refere que não é possível gerar diretamente o mapa e o gráfico, mas organizou a informação para que o utilizador possa construir essas visualizações. 
+
+Indica que com base no endpoint api4gj.php?nome=est-meteov2, existem 23 pontos de sensorização. O Claude refere 21. Apresenta uma tabela com os sensores, sendo o tipo apresentado como inferido. Apresenta 3 sensores com problemas (sem dados desde há algum tempo).
+
+Refere que cada ponto no mapa contém um link (no campo popupContent) que permite ver os dados históricos num gráfico. Não é claro a que se refere (aos urls dados no prompt?). 
+
+Apresenta urls para gráficos: 
+- https://baze.cm-maia.pt/BaZe/gstat.htm?e0=itecons-cverde-T&modo=pack
+- e https://baze.cm-maia.pt/BaZe/gstat.htm?e0=qart-Rua%20do%20Património-T&modo=pack.
+
+Indica que não conseguiu aceder ao endpoint spek1 e que as páginas base2b.htm são consolas interativas que já mostram mapas com várias camadas de dados (incluindo as que listou) e apresenta os links. Parece ter consultado estes urls.
+
+Finalmente, apresenta formas para criar o mapa/gráfico. Usar a página base2b.htm ou desenvolver uma página web simples que consuma o api4gj.php?nome=est-meteov2, desenhe os pontos num mapa (usando Leaflet ou OpenLayers) e gere os gráficos (usando Chart.js ou ECharts) com os dados de cada URL gstat.htm.
+
+### Perplexity
+
+Apresenta informação acerca dos passos que realizou para obter a resposta, referências no texto e fontes. Aliás, este LLM é um dos que mostra mais detalhe nesta matéria.
+
+Aparentemente, consultou referências externas e não conseguiu ler diretamente os endpoints apresentados no prompt.
+
+Indica que os endpoints parecem devolver dados de estações/sensores do BaZe da Câmara Municipal da Maia, enquanto a documentação pública de APIs meteorológicas mostra o tipo de parâmetros normalmente expostos por este tipo de sistemas. 
+
+Usa outras APIs públicas como referência.
+
+Considera que est-meteov2, spek1, est-meteoplus e est-meteo são sistemas com sensores.
+
+Apresenta informação acerca de como gerar o mapa e o gráfico no browser, com estrutura recomendada, tecnologias a serem usadas e apresenta algum código (não um código completo).
+
+Indica que pode gerar o código completo.
+
+Uma questão é que embora o LLM tenha consultado fontes externas, parece que não escolheu consultar de preferência fontes relacionadas com a plataforma BaZe. Nas sources que apresenta no fim, não vi nenhuma diretamente relacionada com a plataforma BaZe.
+
+Resposta pouco útil.
+
+### Copilot
+
+Não apresenta fontes e referências diretamente, mas apresenta informação de como entendeu o problema e como o resolveu.
+
+Apresenta código.
+
+Entende o que o utilizador quer gerar e que para isso provavelmente precisa de código HTML/JS, Assim, vai à procura de informação para ajudar com isto.
+
+Decide criar um código mínimo e embora reconheça que é necessário conhecer a estrutura dos dados retornados pelos endpoints, aparentemente, decide não os analisar. Assim assume o tipo de payload. 
+
+No fim indica que se o utilizador quiser, pode ajustar o código gerado ao formato real de um dos endpoints (e pede ao utilizador para disponibilizar um exemplo de resposta JSON, caso pretenda fazer isto).
+
+### Gemini
+
+Não mostra passos, referências ou fontes.
+
+Ainda assim parece perceber que dois urls fornecem dados em Json e os outros visualizações.
+
+Indica que como é uma inteligência artificial baseada em texto, não consegue gerar um mapa dinâmico ou um gráfico interativo em tempo real que se atualize automaticamente com esses endpoints. 
+
+Rwfwew que pode estruturar como os dados podem ser agregados e apresentar uma representação do que os dados indicam.
+
+Apresenta alguma informação acerca dos sensores (sem muito detalhe). 
+
+Indica que ao analisar os endpoints de API disponíveis, os dados devolvidos incluem variáveis como Temperatura, Humidade, Pressão Atmosférica e Qualidade do Ar e apresenta uma simulação do gráfico comparativo entre os sistemas: 
+- aqui apresenta uma tabela e refere Resumo dos Dados Atuais (Estimado via API). O estimado aqui, coloca dúvidas e a tabela assume que est-meteov2, spek1, est-meteoplus e est-meteo são sensores?
+- 
+Apresenta sugestões para integrar os dados.
+
+Resposta pouco útil. Penso que a menos útil de todos os LLMs.
 
 # Conclusões
+
+A maior parte dos LLMs não cria mapas/gráficos ou dashboards diretamente. Uma exceção é o Claude.
+
+Alguns LLMs apresentam código para criar as visualizações pedidas, por exemplo, o chatGPT, o copilot e o perplexity. No caso do Perplexity, o código apresentado é muito conceptual.
+
+Alguns LLMs apresentam código, que parece mínimo e não baseado no que os endpoints realmente retornam. Penso que a maior parte do código apresentado não funciona as-is e necessitaria de prompts adicionais até se encontrar um código funcional. O Copilot toma esta decisão de uma forma explícita.
+
+O Claude e o Deep apresentam uma discrepância no número de pontos com sensores, 21 e 23, respectivamente.
+
+O Claude não conseguiu aceder a alguns dados embora aparentemente tenha tido acesso aos endpoints apresentados no prompt e a informação que apresenta nos gráficos é simulada. Ficam dúvidas também relativamente à outra informação apresentada para além dos gráficos.
+
+Embora o Perplexity seja um dos LLMs que apresenta mais informação detalhada acerca dos passos realizados para obter a resposta, fontes e referências, a resposta do LLM é pouco útil.
+
+A resposta menos útil parece ser a do Gemini. 
+
+Se o objetivo for obter uma resposta, em vez de código, apenas o Claude apresentou gráficos e um mapa com as limitações descritas. A resposta dos outros LLMs não foi muito útil.
