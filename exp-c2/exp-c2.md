@@ -8,9 +8,9 @@
 
 ```
 
-<img src="exp-c2-1.png" alt="Logo" width="100%">
+<img src="exp-c2-1.png" alt="Logo" width="50%">
 
-<img src="exp-c2-2.png" alt="Logo" width="75%">
+<img src="exp-c2-2.png" alt="Logo" width="50%">
 
 ```
 Aqui está o dashboard do consumo de água do dispositivo C16SC000825R (SMAS / Câmara Municipal da Maia), com dados entre 14 e 24 de abril de 2026.
