@@ -44,9 +44,8 @@ O dashboard mostra:
 O site BaZe monitoriza vários caudalímetros e usa o critério estatístico μ + 2σ para detetar consumos diários anómalos que possam indiciar a existência de fugas cm-maia. Os dados têm granularidade horária e são extraídos da plataforma waterlog.digitalmetering.com.
 ```
 
-### Conclusões
+## Conclusões
 
-```
 O LLM:
 - Apresenta as referências que usou para obter uma resposta: estas incluem vários urls da plataforma BaZe. Falhou a aceder a pelo menos um url.
 - Indica que tem todos os dados que precisa e que vai criar o dashboard, mas a seguir indica que não conseguiu carregar os dados.
@@ -56,4 +55,3 @@ O LLM:
  - O dashboard deveria mostrar, segundo o LLM, o consumo total e médio diário no período disponível (cerca de 11 dias recentes), gráfico de barras diário, curva acumulada do contador, mostrando a progressão da leitura total e Indicadores de consumo máximo, mínimo e dias com comportamento anómalo.
 - Refere que o site BaZe monitoriza vários caudalímetros e usa o critério estatístico μ + 2σ para detectar consumos diários anómalos que possam indiciar a existência de fugas. Os dados têm granularidade horária e são extraídos da plataforma waterlog.digitalmetering.com.
 - Aparentemente consegue construir dashboards e encontrar informação para fazer essa construção a partir de endpoints (neste caso, a partir de um endpoint), mas depois não consegue aceder aos dados reais e falha. Curiosamente, noutra experiência, este modelo apresentou dados simulados quando não conseguiu aceder aos dados reais dos endpoints.
-```
