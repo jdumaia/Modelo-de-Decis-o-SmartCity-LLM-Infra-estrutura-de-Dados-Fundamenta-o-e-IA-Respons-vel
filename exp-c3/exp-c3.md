@@ -19,6 +19,7 @@ https://baze.cm-maia.pt/BaZe/api/api4gj.php
 Done
 
 Now let me fetch some actual sensor data to understand the structure:
+
 Searched the web
 https://baze.cm-maia.pt/BaZe/api/x4rt.php?id=meteo1
 Failed to fetch https://baze.cm-maia.pt/BaZe/api/x4rt.php?id=airq1
