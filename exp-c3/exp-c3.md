@@ -55,9 +55,9 @@ Energia — evolução da produção fotovoltaica vs. consumo da rede nas Piscin
 
 O LLM:
 - Aparentemente, analisou os 3 endpoints de dados e a seguir analisou mais endpoints para obter os dados, nomeadamente:
- - https://baze.cm-maia.pt/BaZe/api/x4rt.php?id=meteo1
- - Failed to fetch https://baze.cm-maia.pt/BaZe/api/x4rt.php?id=airq1
- - Failed to fetch https://baze.cm-maia.pt/BaZe/api/api4gj.php?nome=est-meteoplus
+  - https://baze.cm-maia.pt/BaZe/api/x4rt.php?id=meteo1
+  - Failed to fetch https://baze.cm-maia.pt/BaZe/api/x4rt.php?id=airq1
+  - Failed to fetch https://baze.cm-maia.pt/BaZe/api/api4gj.php?nome=est-meteoplus
 - Por qualquer razão, não conseguiu aceder com sucesso a todos os urls que consultou.
 - Apresenta um dashboard interativo, mesmo sem ter conseguido aceder com sucesso a todos os urls (endpoints de dados). Assim, coloca-se a questão se os dados que são mostrados são dados reais, inferidos ou gerados.
 
@@ -65,11 +65,11 @@ O dashboard tem quatro paineis, um mapa com a localização de sensores, informa
 - O mapa apresenta a localização de 9 sistemas de sensorização. Pode ser necessário interagir com o mapa para ver os pontos (no meu browser o fundo do mapa aparece a cinzento).
 - A meteorologia dá erro ao carregar os dados (erro a aceder a x4rt.php?id=meteo1).
 - A qualidade do ar apresenta informação que inclui:
- - informação sobre 6 pontos de monitorização da qualidade do ar disponíveis via API (airq1–airq6),
- - um gráfico comparativo das concentrações típicas do concelho, de NO₂, O₃, PM10, PM2.5 e SO₂ face aos limites da OMS.
+  - informação sobre 6 pontos de monitorização da qualidade do ar disponíveis via API (airq1–airq6),
+  - um gráfico comparativo das concentrações típicas do concelho, de NO₂, O₃, PM10, PM2.5 e SO₂ face aos limites da OMS.
 - A energia mostra dois gráficos:
- - evolução da produção fotovoltaica vs. consumo da rede nas Piscinas de Gueifães e
- - Consumo de energia elétrica por sector no concelho.
+  - evolução da produção fotovoltaica vs. consumo da rede nas Piscinas de Gueifães e
+  - Consumo de energia elétrica por sector no concelho.
 Lista os sistemas de sensores: estação meteorológica, 3 pontos de qualidade do ar, ruído, painéis fotovoltaicos, contadores de energia e estacionamento, mas não os mostra no mapa.
  
 Após várias experiências, conclui-se que o Claude tem potencial, mas na forma atual não dá garantias de obter uma resposta satisfatória/útil em todos os casos.
