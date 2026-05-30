@@ -15,6 +15,7 @@ Nas experiências realizadas foram usados os LLMs seguintes:
 - Gemini
 
 Lista de experiências com todos os LLMs:
+- [exp 1](exp-1/exp-1.md): Utilização explicita de 2 endpoints de dados e de 2 urls relativos a uma consola de visualização de dados georeferenciados, disponível online, para construção e apresentação de um mapa com a localização dos vários sistemas de sensorização disponíveis e um gráfico onde se podem visualizar os dados dos vários sensores/sistemas.
 - exp 1:
 - exp 2:
 
