@@ -33,7 +33,7 @@ Leitura acumulada — o contador passou de 25 155 100 L para 25 221 100 L no per
 
 ### Conclusões
 
-```
+
 O LLM:
 - Apresenta as referências usadas para obter a resposta: aparentemente só consultou o endpoint apresentado no prompt.
 - Aparentemente, conseguiu aceder aos dados e mostra um dashboard interativo.
@@ -48,4 +48,4 @@ O dashboard apresenta informação como por exemplo:
 - Dia de maior e menor consumo e Leitura atual.
 
 Este resultado parece indicar que este LLM tem a capacidade de criar dashboards a partir de endpoints que retornam os dados diretamente, desde que tenha acesso aos dados. Mas existem outros resultados onde o LLM criou ou não um dashboard quando não teve acesso aos dados ou a parte dos dados. Existe assim alguma incerteza no resultado embora o LLM tenha a capacidade de criar dashboards. Isto parece indicar a necessidade de uma análise mais profunda e detalhada para perceber por que razão o LLM por vezes não consegue aceder aos dados.
-```
+
