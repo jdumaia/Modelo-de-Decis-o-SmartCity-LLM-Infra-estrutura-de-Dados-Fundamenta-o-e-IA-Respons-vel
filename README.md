@@ -19,8 +19,9 @@ Lista de experiências com todos os LLMs:
 - exp 2:
 
 Lista de experiências com o Claude:
-- exp c1: Utilização de um endpoint para construção e apresentação de um dashboard do consumo de água no município.
+- [exp c1: Utilização de um endpoint para construção e apresentação de um dashboard do consumo de água no município.](exp-c1/exp-c1.md)
 - exp 2:
+- exp 3:
 
 # Autores
 
