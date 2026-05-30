@@ -492,7 +492,11 @@ Indica que com base nos dados dos endpoints que conseguiu aceder, mas não é cl
 
 Também refere que não é possível gerar diretamente o mapa e o gráfico, mas organizou a informação para que o utilizador possa construir essas visualizações. 
 
-Indica que com base no endpoint api4gj.php?nome=est-meteov2, existem 23 pontos de sensorização. O Claude refere 21. Apresenta uma tabela com os sensores, sendo o tipo apresentado como inferido. Apresenta 3 sensores com problemas (sem dados desde há algum tempo).
+Indica que com base no endpoint api4gj.php?nome=est-meteov2, existem 23 pontos de sensorização. O Claude refere 21. 
+
+Apresenta uma tabela com os sensores, sendo o tipo apresentado como inferido. 
+
+Apresenta 3 sensores com problemas (sem dados desde há algum tempo).
 
 Refere que cada ponto no mapa contém um link (no campo popupContent) que permite ver os dados históricos num gráfico. Não é claro a que se refere (aos urls dados no prompt?). 
 
