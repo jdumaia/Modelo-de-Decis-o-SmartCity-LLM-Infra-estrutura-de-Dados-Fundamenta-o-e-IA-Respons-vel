@@ -20,6 +20,7 @@ Dados georeferenciados
 baze.cm-maia.pt
 
 Now let me fetch actual sensor data to power the charts:
+
 Searched the web
 Failed to fetch https://baze.cm-maia.pt/BaZe/gstat.htm?e0=itecons-cverde-T&modo=pack
 Failed to fetch https://baze.cm-maia.pt/BaZe/api/api4gj.php?nome=est-meteo
