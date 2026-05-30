@@ -14,6 +14,9 @@ Nas experiências realizadas foram usados os LLMs seguintes:
 - Copilot
 - Gemini
 
+Lista de experiências:
+- exp 1:
+- exp 2:
 
-
+# Autores
 
