@@ -32,6 +32,7 @@ Reading frontend design skill
 Done
 
 Now I have all the info I need. Let me build a comprehensive dashboard as an HTML artifact.
+
 Now I have everything I need. Let me build the full dashboard app:
 ```
 
