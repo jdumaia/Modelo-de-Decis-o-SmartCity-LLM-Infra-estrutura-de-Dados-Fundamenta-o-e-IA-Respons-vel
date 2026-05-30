@@ -37,8 +37,8 @@ Leitura acumulada — o contador passou de 25 155 100 L para 25 221 100 L no per
 O LLM:
 - Apresenta as referências usadas para obter a resposta: aparentemente só consultou o endpoint apresentado no prompt.
 - Aparentemente, conseguiu aceder aos dados e mostra um dashboard interativo.
- - O Dashboard apresenta o consumo de água do dispositivo C16SC000825R (SMAS/Câmara Municipal da Maia), com dados entre 14 e 24 de abril de 2026.
- - Para além do dashboard o LLM apresenta algumas análises sobre os dados, por exemplo sobre picos de consumo.
+  - O Dashboard apresenta o consumo de água do dispositivo C16SC000825R (SMAS/Câmara Municipal da Maia), com dados entre 14 e 24 de abril de 2026.
+  - Para além do dashboard o LLM apresenta algumas análises sobre os dados, por exemplo sobre picos de consumo.
 
 Os dados apresentados parecem alinhados com os dados apresentados na página [https://baze.cm-maia.pt/BaZe/fsmas.php](https://baze.cm-maia.pt/BaZe/fsmas.php) embora esta tenha demorado bastante tempo a carregar e só analisei a informação apresentada nas tabelas.
 
