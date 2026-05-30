@@ -167,7 +167,7 @@ Se estes endpoints devolverem JSON, a lógica base é esta:
 - Desenhar os pontos no mapa.
 - Construir o gráfico com as séries temporais obtidas.
 
-```xml
+```html
 xml
 <div id="map" style="height: 420px;"></div>
 <div id="chart" style="height: 420px;"></div>
