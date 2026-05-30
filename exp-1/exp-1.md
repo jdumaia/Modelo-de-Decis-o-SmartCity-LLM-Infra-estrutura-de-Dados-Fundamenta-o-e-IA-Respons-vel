@@ -88,69 +88,7 @@ Com base nos dados dos endpoints que consegui aceder, não é possível gerar di
 
 Com base no endpoint api4gj.php?nome=est-meteov2, existem 23 pontos de sensorização ativos (excluí sensores offline/sem dados). Aqui está a lista para o seu mapa:
 
-Nome do Sensor
-Tipo (inferido)
-Coordenadas (Lat, Lon)
-Cobertura Verde
-Estação Meteo/Qart
-41.234142, -8.623111
-IPMA - Estação 1200545
-Estação Meteo
-41.24075, -8.665336
-ICAO - LPPR
-Estação Meteo
-41.2481, -8.68139
-Freguesia da Cidade da Maia
-Sensor Qart
-41.229284, -8.595962
-Rua do Património
-Sensor Qart
-41.287378, -8.612629
-Rua Padre António
-Sensor Qart
-41.234678, -8.624792
-Sonda 1 - FOZ - D
-Sonda (Nível)
-41.20287, -8.6731
-sonda 2 - Mat - LIPOR D
-Sonda (Nível)
-41.2168, -8.64742
-Sonda 3 - MAI ETAR MOREIRA D
-Sonda (Nível)
-41.23648, -8.64619
-Sonda 4 MAT - Ponte Varas D
-Sonda (Nível)
-41.20746, -8.62062
-Sonda 5 - MAI - Arquinho D
-Sonda (Nível)
-41.20577, -8.60099
-Sonda 6 MAIA -ETAR PARADA D
-Sonda (Nível)
-41.20243, -8.59603
-Sonda 7 ETAR Ermesinde D
-Sonda (Nível)
-41.22201, -8.56403
-Sonda 8 R Leandro D
-Sonda (Nível)
-41.2297, -8.55774
-Sonda 9 Parque São lazaro D
-Sonda (Nível)
-41.23986, -8.52557
-Sonda 10 - ST - Açude ETAR A Longa D
-Sonda (Nível)
-41.25214, -8.50631
-Sonda 11 ST - p. Cabras D
-Sonda (Nível)
-41.30029, -8.45044
-Sonda 12 Mai - Parque Alvura - Açude D
-Sonda (Nível)
-41.21157, -8.59007
-Sonda possível S. Tirso altern Ponte cabras
-Sonda (Nível)
-41.25166, -8.50264
-Sonda Valongo Alternativa a S lázaro
-Sonda (Nível)
-41.22202, -8.56389
+<img src="exp-1-deep-tab.png" alt="Logo" width="65%">
 
 Sensores com problemas (para nota no mapa):
 - Travessa da Siderurgia: Intermitente (sem dados desde 10/06/2025)
@@ -178,7 +116,10 @@ Se precisar de uma visualização personalizada, sugiro:
 
 Precisa de ajuda para interpretar os dados de outro sensor específico ou para construir um código simples de visualização?
 
+## Perplexity
 
+### Resposta
+[https://www.perplexity.ai/search/ed6522c0-4fc6-4624-b303-5eb5c39dd036](https://www.perplexity.ai/search/ed6522c0-4fc6-4624-b303-5eb5c39dd036) (Para ver conteúdos interativos pode ser necessário fazer login no Claude com a sua conta.)
 
 ## Conclusões
 
