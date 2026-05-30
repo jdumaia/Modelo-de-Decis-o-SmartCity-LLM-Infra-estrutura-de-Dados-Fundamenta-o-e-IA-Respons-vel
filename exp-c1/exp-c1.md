@@ -23,7 +23,7 @@ Done
 Tenho os dados que precisava. Agora vou criar um dashboard interativo com dados reais da API do BaZe, mostrando o consumo de água no município da Maia.
 ```
 
-<img src="exp-c1.png" alt="Logo" width="75%">
+<img src="exp-c1.png" alt="Logo" width="65%">
 <!-- [<img src="exp-c1.png" width="75%">](exp-c1.png) -->
 <!-- ![dashboard](exp-c1.png) -->
 
