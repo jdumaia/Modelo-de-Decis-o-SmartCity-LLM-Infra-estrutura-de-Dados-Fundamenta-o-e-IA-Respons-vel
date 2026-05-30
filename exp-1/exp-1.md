@@ -168,7 +168,6 @@ Se estes endpoints devolverem JSON, a lógica base é esta:
 - Construir o gráfico com as séries temporais obtidas.
 
 ```html
-xml
 <div id="map" style="height: 420px;"></div>
 <div id="chart" style="height: 420px;"></div>
 
