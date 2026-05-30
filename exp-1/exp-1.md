@@ -463,5 +463,15 @@ Se pretende construir uma aplicação ou dashboard que consuma estes links, pode
 
 Para consultar os dados detalhados em tempo real, recomendo abrir os links diretamente, sendo que o est-meteov2 e o spek1 fornecerão o dado bruto mais recente em formato de texto.
 
-# Conclusões
+# Análise
 
+| LLM        | Análise da Resposta |
+|------------|---------------------|
+| **Claude** | Mostra os passos e referências usadas. Acedeu aos endpoints do prompt. Tentou aceder a dois endpoints adicionais sem sucesso. Apresenta um dashboard interativo com 3 vistas: (1) mapa de sensores georreferenciados com 21 pontos codificados por cor, com popup por marcador e links para dados em tempo real no BaZe; (2) gráficos de temperatura, humidade, qualidade do ar e distribuição por tipo (dados simulados por falta de autenticação ao BaZe); (3) lista de sensores com inventário completo. Dashboard interessante mas com dados históricos simulados, o que levanta questões sobre a autenticidade dos restantes dados. |
+| **ChatGPT** | Criou um dashboard em código. |
+| **DeepSeek** | Não apresenta fontes, referências ou passos. Não é claro quais endpoints consultou. Indica que não consegue gerar mapa/gráfico diretamente, mas organiza a informação para o utilizador construir as visualizações. Indica 23 pontos de sensorização (Claude indica 21). Apresenta tabela com sensores (tipo inferido) e 3 sensores com problemas. Referencia links para gráficos do BaZe e páginas `base2b.htm`. Sugere uso de Leaflet/OpenLayers para mapa e Chart.js/ECharts para gráficos. Apresenta alguns emojis. |
+| **Perplexity** | Apresenta passos, referências no texto e fontes — um dos LLMs com mais detalhe nesta matéria. Consultou referências externas mas não leu diretamente os endpoints do prompt. Usou outras APIs públicas como referência para inferir os parâmetros. Apresenta estrutura recomendada, tecnologias e algum código (incompleto) para gerar mapa e gráfico. Indica que pode gerar código completo. Não consultou fontes diretamente relacionadas com o BaZe. **Resposta pouco útil.** |
+| **Copilot** | Não apresenta fontes, mas descreve como entendeu o problema e como o resolveu. Apresenta código HTML/JS mínimo. Reconhece a necessidade de conhecer a estrutura dos dados dos endpoints, mas opta por assumir o tipo de payload sem os analisar. Oferece ajustar o código ao formato real caso o utilizador forneça um exemplo de resposta JSON. |
+| **Gemini** | Não mostra passos, referências nem fontes. Percebe que dois URLs devolvem JSON e os outros são visualizações. Indica não conseguir gerar mapa dinâmico ou gráfico interativo em tempo real. Apresenta informação superficial sobre os sensores e uma tabela com dados "estimados via API", o que levanta dúvidas sobre a sua origem. Apresenta sugestões de integração. **Resposta a menos útil de todos os LLMs.** |
+
+# Conclusões
