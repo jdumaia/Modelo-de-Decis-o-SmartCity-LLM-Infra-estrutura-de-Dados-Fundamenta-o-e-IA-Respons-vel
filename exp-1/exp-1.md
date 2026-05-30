@@ -50,7 +50,7 @@ Lista de sensores - inventário de todos os sensores com tipo e estado operacion
 ## ChatGPT
 
 ### Resposta
-[https://chatgpt.com/share/69ee16af-f66c-832f-b0fd-1dd392d13cb6](https://chatgpt.com/share/69ee16af-f66c-832f-b0fd-1dd392d13cb6) (Para ver conteúdos interativos pode ser necessário fazer login no Claude com a sua conta.)
+[https://chatgpt.com/share/69ee16af-f66c-832f-b0fd-1dd392d13cb6](https://chatgpt.com/share/69ee16af-f66c-832f-b0fd-1dd392d13cb6)
 
 Criei um dashboard em canvas com:
 - Mapa interativo com a localização dos sistemas de sensorização
@@ -80,7 +80,7 @@ Se quiseres, também posso fazer a versão final pronta para publicar online.
 ## Deepseek
 
 ### Resposta
-[https://chat.deepseek.com/share/kzr9wqz0dz528mabk6](https://chat.deepseek.com/share/kzr9wqz0dz528mabk6) (Para ver conteúdos interativos pode ser necessário fazer login no Claude com a sua conta.)
+[https://chat.deepseek.com/share/kzr9wqz0dz528mabk6](https://chat.deepseek.com/share/kzr9wqz0dz528mabk6)
 
 Com base nos dados dos endpoints que consegui aceder, não é possível gerar diretamente o mapa e o gráfico, pois são necessárias ferramentas de visualização (como bibliotecas de JavaScript ou Python). No entanto, organizei a informação para que possa construir essas visualizações.
 
@@ -119,7 +119,7 @@ Precisa de ajuda para interpretar os dados de outro sensor específico ou para c
 ## Perplexity
 
 ### Resposta
-[https://www.perplexity.ai/search/ed6522c0-4fc6-4624-b303-5eb5c39dd036](https://www.perplexity.ai/search/ed6522c0-4fc6-4624-b303-5eb5c39dd036) (Para ver conteúdos interativos pode ser necessário fazer login no Claude com a sua conta.)
+[https://www.perplexity.ai/search/ed6522c0-4fc6-4624-b303-5eb5c39dd036](https://www.perplexity.ai/search/ed6522c0-4fc6-4624-b303-5eb5c39dd036)
 
 ```
 Completed 3 steps
