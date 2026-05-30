@@ -2,6 +2,6 @@
 
 # Integrating Large Language Models into Municipal Decision Support Systems for Smart Cities: Data Infrastructure Foundations for Responsible AI 
 
-# Artigo submetido à 26ª Conferência da Associação Portuguesa de Sistemas de Informação
+## Artigo submetido à 26ª Conferência da Associação Portuguesa de Sistemas de Informação
 
 
