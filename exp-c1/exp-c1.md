@@ -2,7 +2,7 @@
 `Usando o site https://baze.cm-maia.pt/, podes apresentar um dashboard do consumo de água no município?`
 
 ### Resposta:
-https://claude.ai/share/00b05c3d-95ac-4d3a-b78c-41a279ae5854
+`https://claude.ai/share/00b05c3d-95ac-4d3a-b78c-41a279ae5854` (Para ver conteúdos interativos pode ser necessário fazer login no Claude com a sua conta.)
 
 ```
 Searched the web
@@ -34,12 +34,12 @@ O dashboard mostra:
 O site BaZe monitoriza vários caudalímetros e usa o critério estatístico μ + 2σ para detetar consumos diários anómalos que possam indiciar a existência de fugas cm-maia. Os dados têm granularidade horária e são extraídos da plataforma waterlog.digitalmetering.com.
 ```
 
-### Conclusão
+### Conclusões
 
 ```
-Apresenta as referências usadas: estas incluem vários urls do BaZe. Falhou a aceder a pelo menos um deles.
-
-O LLM indica que tem todos os dados que precisa e que vai criar o dashboard, mas a seguir indica que não conseguiu carregar os dados. Indica que a fonte dos dados é: https://baze.cm-maia.pt/BaZe/fsmas.php. Como deu erro, não mostra dashboard nenhum. Esta página demora algum tempo a carregar no browser.
+O LLM:
+- Apresenta as referências que usou para obter uma resposta: estas incluem vários urls da plataforma BaZe. Falhou a aceder a pelo menos um url.
+- Indica que tem todos os dados que precisa e que vai criar o dashboard, mas a seguir indica que não conseguiu carregar os dados. Indica que a fonte dos dados é: https://baze.cm-maia.pt/BaZe/fsmas.php. Como deu erro, não mostra dashboard nenhum. Esta página demora algum tempo a carregar no browser.
 
 O LLM afirma que os dados vêm diretamente da API REST do projeto BaZe/D4Maia, com as seguintes informações: o que está a ser monitorizado: o caudalímetro I13JA287987, instalado pela SMAS (Serviços Municipalizados de Água e Saneamento) e transmitido via LoRaWAN.
 
