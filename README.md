@@ -24,7 +24,7 @@ Lista de experiências com o Claude usando urls e endpoints de dados da platafor
 - [exp c3](exp-c3/exp-c3.md): Utilização explicita de 3 endpoints de dados, para construção de uma representação (visualização) semelhante a uma já existente e disponibilizada pela plataforma Baze, Figura 1.
 
 <!-- [![referência](images/ref.png)](images/ref.png) -->
-<img src="images/ref.png" alt="Referência." width="75%">
+<img src="images/ref.png" alt="Referência." width="85%">
 *Figura 1: Visualização de referência.*
 
 - exp 4:
