@@ -31,7 +31,7 @@ Perfil horário típico — o consumo é praticamente nulo entre as 00h e as 06h
 Leitura acumulada — o contador passou de 25 155 100 L para 25 221 100 L no período observado.
 ```
 
-### Conclusões
+## Conclusões
 
 
 O LLM:
