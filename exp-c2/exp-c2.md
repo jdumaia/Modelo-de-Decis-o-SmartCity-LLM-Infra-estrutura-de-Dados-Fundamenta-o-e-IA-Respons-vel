@@ -1,12 +1,12 @@
 ### Prompt:
-`Usando o endpoint https://baze.cm-maia.pt/BaZe/api/x4rt.php?id=C16SC000825R&ssql=True&tend=2026-04-26&tstart=2026-04-18, podes apresentar um dashboard do consumo de água no município?`
+```
+ 
+Usando o endpoint https://baze.cm-maia.pt/BaZe/api/x4rt.php?id=C16SC000825R&ssql=True&tend=2026-04-26&tstart=2026-04-18, podes apresentar um dashboard do consumo de água no município?
+ 
+```
 
 ### Resposta:
-`https://claude.ai/share/18ce110d-4e06-4daa-994c-37734f19fc4c` (Para ver conteúdos interativos pode ser necessário fazer login no Claude com a sua conta.)
-
-```
-
-```
+[https://claude.ai/share/18ce110d-4e06-4daa-994c-37734f19fc4c](https://claude.ai/share/18ce110d-4e06-4daa-994c-37734f19fc4c) (Para ver conteúdos interativos pode ser necessário fazer login no Claude com a sua conta.)
 
 <img src="exp-c2-1.png" alt="Logo" width="50%">
 
