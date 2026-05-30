@@ -8,7 +8,7 @@ Usando os endpoints https://baze.cm-maia.pt/BaZe/api/api4gj.php?nome=est-meteov2
 ## Claude
 
 ### Resposta
-[https://claude.ai/share/a9f095ce-6db7-43b1-80fe-fa2fd058e4f8](https://claude.ai/share/a9f095ce-6db7-43b1-80fe-fa2fd058e4f8) (Para ver conteúdos interativos pode ser necessário fazer login no Claude com a sua conta.)
+[https://claude.ai/share/a9f095ce-6db7-43b1-80fe-fa2fd058e4f8](https://claude.ai/share/a9f095ce-6db7-43b1-80fe-fa2fd058e4f8)
 
 ```
 Searched the web
