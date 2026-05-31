@@ -764,7 +764,7 @@ O que eu entrego assim que tiver os dados
 Se preferir, cole aqui o conteúdo de x4rt.php, api4s.php e api4gj.php e eu devolvo já a visualização pronta.
 
 Follow-ups
-​- Como fazer uma requisição GET ao x4rt.php para dados meteo1
+- Como fazer uma requisição GET ao x4rt.php para dados meteo1
 - Quais parâmetros usar no api4s.php para séries AccDsvSst
 - Exemplo de JSON resposta do endpoint x4rt.php para airq
 - Dashboard live com sensores BaZe Maia: meteo, ar, energia e tráfego
