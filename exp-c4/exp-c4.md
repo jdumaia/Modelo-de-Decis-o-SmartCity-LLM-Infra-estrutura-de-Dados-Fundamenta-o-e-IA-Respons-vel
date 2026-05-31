@@ -203,6 +203,8 @@ Inconsistência tipográfica:
 
 Este é um ficheiro de índice/catálogo de séries disponíveis. Deixa-me também verificar as linhas truncadas para ter o quadro completo.Tenho agora uma visão completa do dataset. Vou criar uma análise visual e estruturada.Aqui está a análise estruturada completa do dataset:
 
+<img src="exp-c4.png" alt="Diagrama" width="65%">
+
 1\. O que o dataset representa
 
 O ficheiro é o catálogo de séries do BaZe Datalake da Câmara Municipal da Maia — uma plataforma de dados abertos municipais. Não contém os dados em si, mas o índice de todas as séries disponíveis via API, com código e descrição de cada indicador. São ~370 séries relativas ao Concelho da Maia (Grande Porto).
