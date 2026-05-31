@@ -765,10 +765,10 @@ Se preferir, cole aqui o conteúdo de x4rt.php, api4s.php e api4gj.php e eu devo
 
 Follow-ups
 - Dashboard live com sensores BaZe Maia: meteo, ar, energia e tráfego
-​- Relatório 24h: tendências de qualidade do ar, energia e meteo no Maia
 ​- Como fazer uma requisição GET ao x4rt.php para dados meteo1
 - Quais parâmetros usar no api4s.php para séries AccDsvSst
 - Exemplo de JSON resposta do endpoint x4rt.php para airq
+- Relatório 24h: tendências de qualidade do ar, energia e meteo no Maia
 
 ## Copilot
 
