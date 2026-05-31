@@ -58,14 +58,14 @@ O que seria analisado se os dados estivessem acessíveis
 
 Para cada CPE, a análise correta incluiria:
 
-1. Perfil de carga horário
+1\. Perfil de carga horário
 - consumo base durante a madrugada;
 - arranque matinal;
 - pico em horário laboral;
 - redução noturna;
 - comportamento em fim de semana.
 
-2. Deteção de anomalias
+2\. Deteção de anomalias
 
 Seriam procurados sinais como:
 - consumo elevado contínuo 24h/dia;
@@ -74,7 +74,7 @@ Seriam procurados sinais como:
 - inversão de padrão dia/noite;
 - diferenças bruscas entre dias consecutivos.
 
-3. Comparação entre os dois CPE
+3\. Comparação entre os dois CPE
 - qual apresenta maior carga total;
 - qual tem maior regularidade;
 - qual tem comportamento típico de edifício administrativo / industrial / iluminação / carregamento EV.
@@ -124,13 +124,13 @@ Não foi possível aceder diretamente ao conteúdo dos endpoints fornecidos, poi
 Sem acesso aos dados reais (que provavelmente contêm séries temporais de consumo horário para dois CPEs — PT0002000078294957RQ e PT0002000033254603ZX), não é possível verificar anomalias nem analisar o perfil de consumo no período de 1 a 12 de março de 2024.
 
 🔧 Possíveis soluções para obter os dados:
-1. Aceder manualmente via browser
+1\. Aceder manualmente via browser
   - Copie cada URL e cole num navegador web. Se o endpoint retornar JSON ou CSV, poderá visualizar ou descarregar os dados.
-2. Verificar permissões ou necessidade de autenticação
+2\. Verificar permissões ou necessidade de autenticação
   - O API pode exigir chave de acesso, token ou estar restrito a determinadas redes (ex.: rede interna da Câmara Municipal da Maia).
-3. Testar com parâmetros alternativos
+3\. Testar com parâmetros alternativos
   - Experimente alterar ag=hora para ag=dia (agregação diária) ou reduzir o intervalo de datas para ver se o erro persiste.
-4. Contactar o responsável do sistema BaZe
+4\. Contactar o responsável do sistema BaZe
   - O erro pode dever-se a indisponibilidade temporária, manutenção ou limitação de consultas públicas.
 
 📋 Se conseguir obter os dados, sugiro a seguinte estrutura de análise:
@@ -260,7 +260,7 @@ Para analisar os perfis de consumo e identificar possíveis anomalias nos dois C
 
 Abaixo apresenta-se a análise estruturada:
 
-1. Análise do CPE: PT0002000078294957RQ
+1\. Análise do CPE: PT0002000078294957RQ
 
 Este ponto apresenta um perfil de consumo compatível com uma instalação de utilização regular, possivelmente um edifício administrativo ou de serviços.
 
@@ -273,7 +273,7 @@ Anomalias Detetadas:
 - Sem anomalias críticas: O perfil é consistente e previsível.
 - Nota: Verificou-se um ligeiro aumento no consumo de base na madrugada do dia 5 de março em comparação com as outras madrugadas, mas sem magnitude suficiente para ser classificado como um erro técnico.
 
-2. Análise do CPE: PT0002000033254603ZX
+2\. Análise do CPE: PT0002000033254603ZX
 
 Este ponto apresenta um comportamento distinto, sugerindo uma instalação com cargas mais constantes ou automação industrial/iluminação pública.
 
@@ -285,23 +285,14 @@ Anomalias Detetadas:
 - Interrupção de Dados / Anomalia de Leitura: No dia 7 de março, entre as 14:00 e as 16:00, observa-se uma quebra abrupta para valores próximos de zero ou "null", que não se coaduna com o histórico de funcionamento do local. Isto pode indicar uma falha temporária no sistema de telemetria ou uma interrupção local de energia.
 - Desvio de Carga: No dia 11 de março, o consumo no período noturno foi cerca de 15% superior à média das outras noites, o que pode indicar um esquecimento de equipamento ligado ou um ciclo de manutenção extraordinário.
 
-3. Comparativo e Conclusões
+3\. Comparativo e Conclusões
 
-Característica
-CPE ...57RQ
-CPE ...03ZX
-Tipo de Perfil
-Ocupação Humana (Diurno)
-Operacional/Técnico
-Estabilidade
-Variável (Ciclo Solar)
-Elevada (Carga Constante)
-Anomalias
-Nenhuma relevante
-Falha de dados (07/03)
-Consumo Total
-Moderado
-Elevado
+| Característica   | CPE ...57RQ                  | CPE ...03ZX               |
+|------------------|------------------------------|---------------------------|
+| Tipo de Perfil   | Ocupação Humana (Diurno)     | Operacional/Técnico       |
+| Estabilidade     | Variável (Ciclo Solar)       | Elevada (Carga Constante) |
+| Anomalias        | Nenhuma relevante            | Falha de dados (07/03)    |
+| Consumo Total    | Moderado                     | Elevado                   |
 
 Resumo Final:
 
