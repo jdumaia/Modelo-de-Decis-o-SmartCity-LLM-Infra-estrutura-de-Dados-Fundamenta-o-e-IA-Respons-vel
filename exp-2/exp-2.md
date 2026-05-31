@@ -1,14 +1,18 @@
+# Referência
+
+[https://baze.cm-maia.pt/BaZe/crlv0.htm](https://baze.cm-maia.pt/BaZe/crlv0.htm)
+
 # Prompt:
 ```
  
-
+Usando os endpoints https://baze.cm-maia.pt/BaZe/api/x4rt.php, https://baze.cm-maia.pt/BaZe/api/api4s.php e https://baze.cm-maia.pt/BaZe/api/api4gj.php apresenta um mapa com a localização de sensores LoRaWAN no Corredor do Rio Leça e um gráfico interativo de linhas onde se podem visualizar os dados dos vários sensores.
 
 ```
 
 ## Claude
 
 ### Resposta
-[https://claude.ai/share/a9f095ce-6db7-43b1-80fe-fa2fd058e4f8](https://claude.ai/share/a9f095ce-6db7-43b1-80fe-fa2fd058e4f8)
+[https://claude.ai/share/7fea64d3-5343-41d7-89c8-46060a1404be](https://claude.ai/share/7fea64d3-5343-41d7-89c8-46060a1404be)
 
 ```
 
