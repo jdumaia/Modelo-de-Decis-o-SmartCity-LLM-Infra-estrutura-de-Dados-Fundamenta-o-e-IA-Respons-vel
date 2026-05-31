@@ -52,7 +52,7 @@ Apresenta mais detalhe (informação) relativamente ao mapa de calor.
 
 Pede input adicional para continuar.
 
-Pedi para criar um gráfico para um dia específico. O LLM criou visualizações estáticas (imagens) e indicou que:
+Pedi para criar um gráfico para um dia específico. O LLM criou visualizações estáticas (imagens*) e indicou que:
 
 O portal BaZe não permite extrair diretamente os dados numéricos, por isso estas visualizações são reconstruções realistas (baseadas no padrão típico de consumo) — úteis para relatório, mas não são dados oficiais.
 
