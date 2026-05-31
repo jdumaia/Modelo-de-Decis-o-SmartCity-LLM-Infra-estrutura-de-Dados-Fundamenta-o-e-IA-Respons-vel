@@ -42,77 +42,64 @@ Os dados são carregados diretamente dos três endpoints em tempo real - o x4rt.
 Mapa E Gráfico Sensores Lo Ra Wan Rio Leça· html
 
 ```html
-<!DOCTYPE html>
-const ctx = document.getElementById('chart').getContext('2d');
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <title>Sensores LoRaWAN - Rio Leça</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-if (chart) chart.destroy();
+  <!-- Leaflet -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 
-chart = new Chart(ctx, {
-type: 'line',
-data: {
-labels: labels,
-datasets: datasets
-},
-options: {
-responsive: true,
-interaction: {
-mode: 'index',
-intersect: false
-},
-plugins: {
-title: {
-display: true,
-text: 'Dados dos Sensores'
-}
-},
-scales: {
-x: {
-title: { display: true, text: 'Tempo' }
-},
-y: {
-title: { display: true, text: 'Valor' }
-}
-}
-}
-});
-}
+  <!-- Chart.js -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
-function addSensorsToMap(sensors) {
-    sensors.forEach(sensor => {
-        if (!sensor.lat || !sensor.lng) return;
+  <style>
+    body { margin: 0; font-family: Arial, sans-serif; }
+    #map { height: 50vh; }
+    #chart-container { height: 50vh; padding: 10px; }
+  </style>
+</head>
+<body>
 
-        const marker = L.marker([sensor.lat, sensor.lng]).addTo(map);
+<div id="map"></div>
+<div id="chart-container">
+  <canvas id="chart"></canvas>
+</div>
 
-        marker.bindPopup(`
-            <b>${sensor.nome || 'Sensor'}</b><br>
-            ID: ${sensor.id}<br>
-            <button onclick="loadSensor(${sensor.id})">Ver dados</button>
-        `);
-    });
+<script>
+const map = L.map('map').setView([41.23, -8.62], 13);
+
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+  attribution: '&copy; OpenStreetMap contributors'
+}).addTo(map);
+
+let chart;
+
+async function fetchSensors() {
+  const res = await fetch('https://baze.cm-maia.pt/BaZe/api/x4rt.php');
+  return res.json();
 }
 
-async function loadSensor(sensorId) {
-    const data = await fetchSensorData(sensorId);
-
-    const labels = data.map(d => d.timestamp);
-    const values = data.map(d => d.valor);
-
-    createChart(labels, [{
-        label: `Sensor ${sensorId}`,
-        data: values,
-        fill: false
-    }]);
+async function fetchSensorData(sensorId) {
+  const res = await fetch(`https://baze.cm-maia.pt/BaZe/api/api4s.php?sensor=${sensorId}`);
+  return res.json();
 }
 
-async function init() {
-    const sensors = await fetchSensors();
-    addSensorsToMap(sensors);
-}
+function createChart(labels, datasets) {
+  const ctx = document.getElementById('chart').getContext('2d');
 
-init();
-</script>
+  if (chart) chart.destroy();
 
-</body>
+  chart = new Chart(ctx, {
+    type: 'line',
+    data: {
+      labels: labels,
+      datasets: datasets
+    },
+    options: {
+      responsive: true,
 </html>
 ```
 
@@ -1192,7 +1179,5 @@ O Perplexity não conseguiu aceder ao conteúdo dos endpoints e pede mais inform
 Os outros LLMs geram código, mesmo sem terem acesso à estrutura de json retornada pelos endpoints.
 
 Alguns LLMs apresentam mais código que os outros, por exemplo, o Deepseek e o CoPilot.
-
-O código apresentado pelo chatGPT coloca dúvidas.
 
 Aqui, o Claude destaca-se dos restante LLMs.
