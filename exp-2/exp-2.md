@@ -1180,4 +1180,6 @@ Os outros LLMs geram código, mesmo sem terem acesso à estrutura de json retorn
 
 Alguns LLMs apresentam mais código que os outros, por exemplo, o Deepseek e o CoPilot.
 
+O código apresentado não está necessariamente pronto a ser usado.
+
 Aqui, o Claude destaca-se dos restante LLMs.
