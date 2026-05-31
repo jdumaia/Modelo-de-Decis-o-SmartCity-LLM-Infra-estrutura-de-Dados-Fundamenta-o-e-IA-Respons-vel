@@ -208,109 +208,145 @@ Trata-se provavelmente de uma camada de acesso simplificado a uma base de dados 
 2\. Variáveis principais identificadas
 
 Como o endpoint funciona por parâmetro dinâmico, as variáveis principais parecem ser:
-Variável            Função provável
-nome
-Código da série temporal pretendida
-ano, data, periodo
-Momento temporal do registo
-valor
-Valor numérico da série
-descricao
-Nome legível da métrica
-fonte
-Origem dos dados
-unidade
-Unidade de medida
-territorio
-Município/Freguesia/Zona
+| Variável           | Função provável                     |
+| nome               | Código da série temporal pretendida |
+| ano, data, periodo | Momento temporal do registo         |
+| valor              | Valor numérico da série             |
+| descricao          | Nome legível da métrica             |
+| fonte              | Origem dos dados                    |
+| unidade            | Unidade de medida                   |
+| territorio         | Município/Freguesia/Zona            |
 
 Exemplo implícito
+
 nome=0008417 foi usado para evolução do número de caixas multibanco ativas no território da Maia.
+
 Conclusão
+
 O nome parece ser a chave central do sistema.
 
-3. Tendências ao longo do tempo
+3\. Tendências ao longo do tempo
+
 Sem consulta direta a uma série específica, só é possível inferir o tipo de tendências que o endpoint suporta.
 Tipos de tendências analisáveis
+
 Demografia
-crescimento / declínio populacional
-natalidade
-envelhecimento
+- crescimento / declínio populacional
+- natalidade
+- envelhecimento
+
 Economia local
-empresas
-emprego
-atividade comercial
+- empresas
+- emprego
+- atividade comercial
+
 Infraestrutura
-ATMs
-energia
-mobilidade
+- ATMs
+- energia
+- mobilidade
+
 Sustentabilidade
-emissões
-consumos
-indicadores ambientais
+- emissões
+- consumos
+- indicadores ambientais
+
 Exemplo documentado
+
 Número de caixas multibanco ativas ao longo do tempo.
 
-4. Anomalias ou valores estranhos
+4\. Anomalias ou valores estranhos
+
 Sem JSON bruto não posso validar estatisticamente uma série concreta, mas num endpoint deste tipo é comum procurar:
+
 Anomalias típicas
+
 a) Saltos abruptos
+
 Exemplo:
-população +15% num ano sem justificação
+- população +15% num ano sem justificação
+
 b) Quebras súbitas
-consumo cai para zero
-série interrompida
+- consumo cai para zero
+- série interrompida
+
 c) Valores nulos
-0
-null
-campos vazios
+- 0
+- null
+- campos vazios
+
 d) Mudança metodológica
-alteração de fonte
-redefinição estatística
+- alteração de fonte
+- redefinição estatística
+
 e) Duplicados temporais
-dois valores para o mesmo ano
+- dois valores para o mesmo ano
 
 5. Possíveis interpretações
+
 Estratégia BaZe
+
 O endpoint parece integrar-se numa lógica de cidade orientada por dados (“data-driven city”), permitindo:
+
 Gestão pública baseada em evidência
-decisões urbanísticas
-planeamento social
-energia
-mobilidade
+- decisões urbanísticas
+- planeamento social
+- energia
+- mobilidade
+
 Transparência pública
+
 exposição de indicadores em formato máquina
+
 Reutilização externa
-dashboards
-investigação
-academia
-empresas tecnológicas
+- dashboards
+- investigação
+- academia
+- empresas tecnológicas
+
 Digital Twin / Smart City
+
 A arquitetura BaZe sugere tentativa de criar um ecossistema municipal integrado de dados.
 
-6. Limitações dos dados
+6\. Limitações dos dados
+
 Principais limitações observáveis
+
 1. Falta de documentação direta no endpoint
+
 Sem swagger/openapi.
+
 2. Parâmetros pouco autoexplicativos
+
 nome=0008234 exige catálogo externo.
+
 3. Metadados insuficientes
+
 Nem sempre é claro:
-unidade
-periodicidade
-fonte
-última atualização
+- unidade
+- periodicidade
+- fonte
+- última atualização
+
 4. Sem paginação / filtros explícitos
+
 Não visível no endpoint público.
+
 5. Dependência de códigos internos
+
 Baixa usabilidade para utilizadores externos.
+
 6. Formato legado (.php)
+
 Funcional, mas transmite imagem de API menos moderna.
 
-7. O que falta para o endpoint ser autoexplicativo
+7\. O que falta para o endpoint ser autoexplicativo
+
 Melhorias recomendadas
+
 A. Endpoint raiz descritivo
 Atualmente:
+
+```php
 api4s.php
 Ideal:
 {
@@ -318,32 +354,36 @@ Ideal:
  "version":"1.0",
  "endpoints":[...]
 }
+```
 
-B. Catálogo público de séries
+B\. Catálogo público de séries
+
 Exemplo:
-/api/api4s.php/catalog
-Com:
-código
-descrição
-unidade
-fonte
-0008234
-Nados vivos
-nº
-INE
 
+/api/api4s.php/catalog
+
+Com:
+
+| código  | descrição   | unidade | fonte |
+| 0008234 | Nados vivos | nº      | INE   |
 
 C. OpenAPI / Swagger
+
 Documentação automática.
 
 D. Nomes legíveis
+
 Em vez de:
 nome=0008234
+
 usar:
 serie=nados_vivos_maia
 
 E. Metadados embutidos
+
 Cada resposta devia incluir:
+
+```json
 {
  "serie":"Nados vivos",
  "fonte":"INE",
@@ -351,37 +391,45 @@ Cada resposta devia incluir:
  "periodicidade":"anual",
  "updated_at":"2026-04-20"
 }
+```
 
 F. Códigos HTTP corretos
-200 OK
-404 série inexistente
-400 parâmetro inválido
+- 200 OK
+- 404 série inexistente
+- 400 parâmetro inválido
 
 G. Exemplos prontos
+
 Links clicáveis para séries populares.
 
 Conclusão Executiva
+
 O api4s.php parece ser um endpoint central de séries temporais territoriais da Maia, tecnicamente útil e com potencial elevado, mas com foco mais técnico/interno do que externo.
+
 Estado atual
+
 ✔ Dados aparentemente ricos
  ✔ Integração Smart City
  ✔ Indicadores históricos
+
 Oportunidade de melhoria
 ❗ Falta semântica
  ❗ Falta documentação
  ❗ Códigos internos opacos
  ❗ UX de API limitada
+
 Em resumo
+
 É uma boa infraestrutura de dados, mas ainda não uma API pública madura e autoexplicativa.
 
 Se quiser, também posso fazer a engenharia reversa técnica do api4s.php, estimando:
-estrutura provável da base de dados
-formato JSON esperado
-todos os parâmetros ocultos
-como transformar isto numa API moderna FastAPI / Node
-como automatizar scraping de todas as séries disponíveis
-Se quiser, posso ir mais fundo nisso.
+- estrutura provável da base de dados
+- formato JSON esperado
+- todos os parâmetros ocultos
+- como transformar isto numa API moderna FastAPI / Node
+- como automatizar scraping de todas as séries disponíveis
 
+Se quiser, posso ir mais fundo nisso.
 
 ## Deepseek
 
