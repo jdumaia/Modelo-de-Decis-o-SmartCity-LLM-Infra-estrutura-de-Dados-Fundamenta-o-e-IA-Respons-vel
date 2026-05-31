@@ -125,3 +125,8 @@ Lista de sensores - inventário de todos os sensores com tipo e estado operacion
 
 # Conclusões
 
+Mais interessante: Claude, Deep, Copilot, Chat GPT, Perplexity e Gemini.
+
+O Gemini parece pouco útil. 
+
+O Deep apresenta as coisas com algum detalhe, mas não apresenta fontes e referências, o que me parece cada vez mais essencial para garantir transparência e rastreabilidade.
