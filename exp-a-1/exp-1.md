@@ -29,13 +29,13 @@ Done
 
 Aqui está a análise estruturada do endpoint api4s.php do BaZe (Base de Dados e Estatísticas) da Câmara Municipal da Maia:
 
-1. O que o endpoint representa
+1\. O que o endpoint representa
 
 Este endpoint é o catálogo de séries de dados do datalake municipal BaZe da Câmara Municipal da Maia. Funciona como um índice — lista todas as séries estatísticas disponíveis sobre o Concelho da Maia, identificadas por um código e uma descrição. É, na prática, o "menu" do sistema: diz o que existe, mas não devolve os dados em si.
 
 As séries abrangem múltiplas dimensões da gestão municipal: demografia, educação, energia, ambiente, habitação, saúde, segurança, economia, mobilidade e sensores IoT em tempo real.
 
-2. Variáveis principais
+2\. Variáveis principais
 
 O catálogo organiza-se em grandes famílias temáticas:
 
@@ -54,13 +54,13 @@ Mobilidade — distâncias das redes CP, Metro do Porto, STCP, Maia Transportes;
 
 Saúde e segurança — número de médicos, enfermeiros, camas hospitalares; ocorrências de incêndios e acidentes (por tipo e tempo de resposta); criminalidade; suicídios.
 
-3. Análise de tendências ao longo do tempo
+3\. Análise de tendências ao longo do tempo
 
 Este endpoint não fornece dados temporais — apenas o índice. As tendências só são visíveis ao chamar os endpoints de dados individuais. Ainda assim, a estrutura do catálogo permite antecipar padrões prováveis:
 
 As séries de energia fotovoltaica (Gueifães, Fórum) sugerem um investimento crescente em autoconsumo renovável. A presença de séries de veículos elétricos e híbridos (NV_Elec, NV_Hibrido) indica monitorização da transição energética na frota. As séries de certificados energéticos por classe (A+ a F) permitem acompanhar a melhoria do parque edificado. A demografia (nados-vivos, óbitos, índices de dependência) enquadra-se num contexto nacional de envelhecimento progressivo.
 
-4. Anomalias e valores estranhos
+4\. Anomalias e valores estranhos
 
 Vários problemas são detetáveis já ao nível do catálogo:
 
@@ -74,7 +74,7 @@ Inconsistência nas unidades de energia — algumas séries das piscinas de Guei
 
 Séries de código interno opaco — POTm90dias, POTm90dias_QtdExecutada, POTm90dias_Total não têm descrição informativa. EC101042858 a EC104042858 têm descrições razoáveis (contagens de peões e ciclistas em Escuteiros/Souto) mas os códigos são completamente opacos.
 
-5. Possíveis interpretações
+5\. Possíveis interpretações
 
 O BaZe parece ter nascido como um agregador de indicadores de monitorização de ODS (Objetivos de Desenvolvimento Sustentável) e de avaliação de desempenho municipal, ao qual foram posteriormente integradas fontes de dados em tempo real via IoT (sondas, estações meteorológicas, sensores urbanos). Há três camadas distintas:
 - Dados censitários e administrativos (educação, demografia, economia) — provavelmente anuais, oriundos do INE, PORDATA ou sistemas internos.
@@ -83,7 +83,7 @@ O BaZe parece ter nascido como um agregador de indicadores de monitorização de
 
 A presença de séries com sufixos AMP e PT indica que o município usa o BaZe também para benchmarking regional e nacional, não apenas para monitorização interna.
 
-6. Limitações dos dados
+6\. Limitações dos dados
 
 Ausência de metadados por série — o endpoint não indica, para cada série: periodicidade (anual, mensal, horária?), data de início e fim, fonte primária, unidade de medida, método de recolha, contacto responsável.
 
@@ -97,7 +97,7 @@ Cobertura geográfica implícita — a maioria das séries é do Concelho da Mai
 
 Ausência de licença e termos de uso — não há indicação sobre se os dados são open data, com que licença, e se podem ser reutilizados.
 
-7. O que falta para os endpoints serem mais autoexplicativos
+7\. O que falta para os endpoints serem mais autoexplicativos
 
 Ao nível do catálogo (api4s.php):
 - Adicionar para cada série: unidade, frequência, fonte, cobertura_temporal (data_inicio, data_fim), tema (taxonomy), estado (ativo/inativo/descontinuado).
