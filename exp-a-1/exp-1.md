@@ -208,7 +208,9 @@ Trata-se provavelmente de uma camada de acesso simplificado a uma base de dados 
 2\. Variáveis principais identificadas
 
 Como o endpoint funciona por parâmetro dinâmico, as variáveis principais parecem ser:
+
 | Variável           | Função provável                     |
+|--------------------|-------------------------------------|
 | nome               | Código da série temporal pretendida |
 | ano, data, periodo | Momento temporal do registo         |
 | valor              | Valor numérico da série             |
@@ -365,6 +367,7 @@ Exemplo:
 Com:
 
 | código  | descrição   | unidade | fonte |
+|---------|-------------|---------|-------|
 | 0008234 | Nados vivos | nº      | INE   |
 
 C. OpenAPI / Swagger
