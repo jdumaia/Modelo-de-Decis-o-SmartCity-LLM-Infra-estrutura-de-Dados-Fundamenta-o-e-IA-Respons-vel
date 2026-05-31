@@ -298,7 +298,7 @@ Resumo Final:
 
 O período analisado mostra uma operação normal para o primeiro CPE. No entanto, para o CPE PT0002000033254603ZX, recomenda-se verificar o estado do contador ou do módulo de comunicação devido à lacuna de dados registada no dia 7 de março, bem como auditar o consumo fora de horas no dia 11.
 
-Usei um prompt adicional de confirmação.
+### Usei um prompt adicional de confirmação.
 
 Prompt de confirmação:
 
