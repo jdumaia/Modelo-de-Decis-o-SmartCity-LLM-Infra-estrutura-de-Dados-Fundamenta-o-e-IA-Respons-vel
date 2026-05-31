@@ -27,7 +27,7 @@ Lista de experiências usando todos os LLMs:
 <!-- <img src="images/ref.png" alt="Referência." width="100%"> -->
 *Figura 1: Visualização de referência.*
 
-- exp 1:
+- [exp 3](exp-3/exp-3.md): Utilização explicita de 2 endpoints de dados, parameterizados, o LLM só tinha de chamar os endpoints e obter os dados, para verificar se ocorreu alguma anomalia e analisar o perfil de consumo no período abrangido pelos dados.
 - exp 2:
 
 Lista de experiências usando apenas o Claude e usando urls e endpoints de dados da plataforma Baze:
