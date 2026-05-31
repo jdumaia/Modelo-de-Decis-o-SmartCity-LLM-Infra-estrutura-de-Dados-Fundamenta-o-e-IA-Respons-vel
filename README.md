@@ -15,6 +15,9 @@ Nas experiências realizadas foram usados os LLMs seguintes:
 - Gemini
 
 Lista de experiências com todos os LLMs:
+- [exp-a 1](exp-a-1/exp-1.md): Análise autónoma do endpoint de dados api4s.
+- [exp-a 2](exp-a-2/exp-2.md): Análise autónoma do endpoint de dados api4gj.
+- [exp-a 3](exp-a-3/exp-3.md): Análise autónoma do endpoint de dados x4rt.
 - [exp 1](exp-1/exp-1.md): Utilização explicita de 2 endpoints de dados e de 2 urls relativos a uma consola de visualização de dados georeferenciados, disponível online, para construção e apresentação de um mapa com a localização dos vários sistemas de sensorização disponíveis e um gráfico onde se podem visualizar os dados dos vários sensores/sistemas.
 - exp 1:
 - exp 2:
