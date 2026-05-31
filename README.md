@@ -19,17 +19,23 @@ Lista de experiências com todos os LLMs:
 - [exp-a 2](exp-a-2/exp-2.md): Análise autónoma do endpoint de dados api4gj.
 - [exp-a 3](exp-a-3/exp-3.md): Análise autónoma do endpoint de dados x4rt.
 - [exp 1](exp-1/exp-1.md): Utilização explicita de 2 endpoints de dados e de 2 urls relativos a uma consola de visualização de dados georeferenciados, disponível online, para construção e apresentação de um mapa com a localização dos vários sistemas de sensorização disponíveis e um gráfico onde se podem visualizar os dados dos vários sensores/sistemas.
+- [exp 2](exp-2/exp-2.md): Utilização explicita de 3 endpoints de dados, para construção e apresentação de uma visualização semelhante a uma visualização disponível online na plataforma BaZe, Figura 1.
+
+[![referência](images/exp-2.png)](images/exp-2.png)
+<!-- <img src="images/ref.png" alt="Referência." width="100%"> -->
+*Figura 1: Visualização de referência.*
+
 - exp 1:
 - exp 2:
 
 Lista de experiências com o Claude usando urls e endpoints de dados da plataforma Baze:
 - [exp c1](exp-c1/exp-c1.md): Utilização de um endpoint mais geral, para construção e apresentação de um dashboard do consumo de água no município.
 - [exp c2](exp-c2/exp-c2.md): Utilização explícita de um endpoint de dados, para construção e apresentação de um dashboard do consumo de água no município.
-- [exp c3](exp-c3/exp-c3.md): Utilização explicita de 3 endpoints de dados, para construção de uma representação (visualização) semelhante a uma já existente e disponibilizada pela plataforma Baze, Figura 1.
+- [exp c3](exp-c3/exp-c3.md): Utilização explicita de 3 endpoints de dados, para construção de uma representação (visualização) semelhante a uma já existente e disponibilizada pela plataforma Baze, Figura 2.
 
 [![referência](images/ref.png)](images/ref.png)
 <!-- <img src="images/ref.png" alt="Referência." width="100%"> -->
-*Figura 1: Visualização de referência.*
+*Figura 2: Visualização de referência.*
 
 - exp 4:
 
