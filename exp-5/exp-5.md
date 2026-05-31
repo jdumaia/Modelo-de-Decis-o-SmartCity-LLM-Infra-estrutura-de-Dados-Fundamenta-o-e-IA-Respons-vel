@@ -110,17 +110,17 @@ Posso ajudar-te a construir esses gráficos — mas antes precisamos de aceder a
 
 No site BaZe existem várias páginas relacionadas com consumo elétrico. As mais relevantes são:
 
-1. Consumo de energia elétrica – Balcão Digital
+1\. Consumo de energia elétrica – Balcão Digital
 
 🔗 consumoe  
 
 Provavelmente contém séries temporais por hora.
 
-2. Sumários diários – sumac
+2\. Sumários diários – sumac
 
 🔗 Ficheiros diários com dados horários
 
-3. Mapa de calor do consumo elétrico
+3\. Mapa de calor do consumo elétrico
 
 🔗 MPC-24V2.htm  
 
@@ -128,7 +128,7 @@ Provavelmente contém séries temporais por hora.
 
 Estas páginas parecem ter dados georreferenciados por hora.
 
-4. Consumo por freguesia (2021)
+4\. Consumo por freguesia (2021)
 
 🔗 hmef.htm  
 
