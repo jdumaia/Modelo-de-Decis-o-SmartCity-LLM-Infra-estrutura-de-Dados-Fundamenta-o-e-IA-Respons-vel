@@ -56,6 +56,8 @@ Pedi para criar um gráfico para um dia específico. O LLM criou visualizações
 
 O portal BaZe não permite extrair diretamente os dados numéricos, por isso estas visualizações são reconstruções realistas (baseadas no padrão típico de consumo) — úteis para relatório, mas não são dados oficiais.
 
+* Estas imagens já não se encontram disponíveis no chat partilhado.
+
 Curioso: diz que não tem acesso aos dados e depois pergunta se quero 🔮 previsão de consumo (machine learning), ⚡ deteção de anomalias, etc.
 
 Perdi a resposta inicial por que fiz login. Depois de fazer login a resposta já não incluia código. O LLM adapta-se ao utilizador/histórico?
@@ -147,18 +149,22 @@ Com base nos dados disponíveis na plataforma BaZe (Balanço Zero) da Câmara Mu
 
 # Análise/Síntese
 
-| Item                              | Claude | ChatGPT | Deepseek | Perplexity | Copilot | Gemini |
+|                                   | Claude | ChatGPT | Deepseek | Perplexity | Copilot | Gemini |
 |-----------------------------------|--------|---------|----------|------------|---------|--------|
-| **Gera Dashboard**                | Sim com alguma interatividade. | Imagens estáticas com dados não reais. | Não. | Não. | Não diretamente. | Não. |
+| **Gera Dashboard**                | Sim com alguma interatividade. | Imagens estáticas com dados não reais, com prompt adicional. | Não. | Não. | Não diretamente. | Não. |
 | **Faz análise adicional dos dados** | Análise breve dos dados apresentados. | Faz uma análise muito superficial que coloca muitas dúvidas quanto à sua utilidade e veracidade. | De dados em concreto não. | Faz uma análise superficial de dados, mas não dos seus valores. | Faz uma análise sobre páginas relacionadas com consumo elétrico no site, consumoe e sumac, etc. Não sobre dados. | Faz uma análise do gráfico de consumo e do mapa de calor. Não é claro que dados foram analisados. |
-| **Apresenta incorreções**         | Diz que alguns dados são estimativas não dados reais. Usou dados mockados e não o referiu explicitamente de forma clara. | Apresenta um conjunto de cores que não corresponde exatamente ao usado no site de referência. | Apresenta alguma informação acerca de links e outras páginas associadas, que teria de ser confirmada. | Apresenta alguma informação acerca dos dados, que teria de ser confirmada. | Apresenta alguma informação acerca de páginas relacionadas com consumo de energia, que teria de ser confirmada. Acho que algumas páginas estão incorretas, consumoe? | Apresenta uma análise e secções adicionais do site, que teriam de ser confirmadas. Relativamente às secções, apresenta link direto apenas para uma delas. |
+| **Apresenta incorreções**         | Diz que alguns dados são estimativas não sáo dados reais. Usou dados gerados, mas não o referiu explicitamente de forma clara. | Apresenta um conjunto de cores que não corresponde exatamente ao usado no site de referência. Não é claro de onde provêm os dados usados. | Apresenta alguma informação acerca de links e outras páginas associadas, que teria de ser confirmada. | Apresenta alguma informação acerca dos dados, que teria de ser confirmada. | Apresenta alguma informação acerca de páginas relacionadas com consumo de energia, que teria de ser confirmada. | Apresenta uma análise e secções adicionais do site, que teriam de ser confirmadas. Relativamente às secções, apresenta link direto apenas para uma delas. |
 | **Consegue recolher dados, explora o site** | Sim, com restrições. Não conseguiu obter dados de alguns endpoints. | Aparentemente, não consegue recolher dados. Explora o link dando alguma informação, principalmente acerca do mapa de calor. | Não consegue recolher dados. Explora o link superficialmente, sem explorar os dados. Encontra outros links, páginas associadas, etc. | Não consegue recolher dados. Explora o link e apresenta alguma informação acerca do seu conteúdo. Diz que pode ajudar a descobrir os endpoints de dados. | Só com este prompt, não recolhe dados. Explora o site e encontra/apresenta possíveis fontes de dados. Pede para escolher uma. | Aparentemente não recolhe dados. Apresenta outras secções do site, algumas com link direto. |
 | **Apresenta fontes/referências**  | Não | Não | Não | Sim | Não | Não |
 
 # Conclusões
 
-Mais interessante: Claude, Deep, Copilot, Chat GPT, Perplexity e Gemini.
+O claude apresenta um dashboard, mas parece apresentar algumas afirmações que não estão corretas. 
 
-O Gemini parece pouco útil. 
+Com este tipo de prompt, o resto dos LLMs não parece ser muito útil. 
 
-O Deep apresenta as coisas com algum detalhe, mas não apresenta fontes e referências, o que me parece cada vez mais essencial para garantir transparência e rastreabilidade.
+O Gemini apresenta uma análise que não se percebe muito bem que dados abrange. 
+
+Alguns LLMs apresentam informação que teria de ser confirmada em detalhe por alguém com mais conhecimento acerca da plataforma BaZe.
+
+Penso que o prompt é essencial para conseguir obter a informação que se pretende e poderá ser necessário fornecer links diretos para os dados, ou payloads, para se obterem resultados concretos e que podem ser verificados. Ou seja, na presença de um url/referência mais genérico(a), os LLMs de uma forma geral parece que não explram ou não conseguem explorar a plataforma subjacente de forma a encontrarem os endpoints de dados necessários para obter uma resposta.
