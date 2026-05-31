@@ -777,16 +777,11 @@ O que eu entrego assim que tiver os dados
 Se preferir, cole aqui o conteúdo de x4rt.php, api4s.php e api4gj.php e eu devolvo já a visualização pronta.
 
 Follow-ups
-
-Dashboard live com sensores BaZe Maia: meteo, ar, energia e tráfego
-​
-Relatório 24h: tendências de qualidade do ar, energia e meteo no Maia
-​
-Como fazer uma requisição GET ao x4rt.php para dados meteo1
-
-Quais parâmetros usar no api4s.php para séries AccDsvSst
-
-Exemplo de JSON resposta do endpoint x4rt.php para airq
+- Dashboard live com sensores BaZe Maia: meteo, ar, energia e tráfego
+​- Relatório 24h: tendências de qualidade do ar, energia e meteo no Maia
+​- Como fazer uma requisição GET ao x4rt.php para dados meteo1
+- Quais parâmetros usar no api4s.php para séries AccDsvSst
+- Exemplo de JSON resposta do endpoint x4rt.php para airq
 
 ## Copilot
 
@@ -1195,5 +1190,7 @@ O Claude tentou criar um dashboard com um mapa e um gráfico, mas não conseguiu
 O Perplexity não conseguiu aceder ao conteúdo dos endpoints e pede mais informação para poder continuar. Não gera código.
 
 Os outros LLMs geram código, mesmo sem terem acesso à estrutura de json retornada pelos endpoints.
+
+Alguns LLMs apresentam mais código que os outros, por exemplo, o Deepseek e o CoPilot.
 
 Aqui, o Claude destaca-se dos restante LLMs.
