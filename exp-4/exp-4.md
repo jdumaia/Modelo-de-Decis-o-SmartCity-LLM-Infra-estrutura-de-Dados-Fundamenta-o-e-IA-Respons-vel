@@ -23,7 +23,6 @@ Searched the web
 ```
 
 <img src="exp-4.png" alt="Diagrama" width="65%">
-
 O segundo endpoint está a retornar timeout. Vou tentar uma abordagem alternativa para explorar a estrutura da API BaZe.
 
 Searched the web
