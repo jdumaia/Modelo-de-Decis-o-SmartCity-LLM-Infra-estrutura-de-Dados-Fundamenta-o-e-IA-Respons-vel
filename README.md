@@ -40,7 +40,7 @@ Lista de experiências usando apenas o Claude e usando urls e endpoints de dados
 <!-- <img src="images/ref.png" alt="Referência." width="100%"> -->
 *Figura 2: Visualização de referência.*
 
-- exp 4:
+- [exp c4](exp-c4/exp-c4.md): Comparação com a utilização de payload e de um endpoint, para analisar o endpoint. Comparação de resultados para dois utilizadores diferentes.
 
 # Autores
 
