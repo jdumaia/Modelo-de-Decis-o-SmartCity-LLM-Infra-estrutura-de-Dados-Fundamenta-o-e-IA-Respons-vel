@@ -56,7 +56,7 @@ Pedi para criar um gráfico para um dia específico. O LLM criou visualizações
 
 O portal BaZe não permite extrair diretamente os dados numéricos, por isso estas visualizações são reconstruções realistas (baseadas no padrão típico de consumo) — úteis para relatório, mas não são dados oficiais.
 
-* Estas imagens já não se encontram disponíveis no chat partilhado.
+*\ Estas imagens já não se encontram disponíveis no chat partilhado.
 
 Curioso: diz que não tem acesso aos dados e depois pergunta se quero 🔮 previsão de consumo (machine learning), ⚡ deteção de anomalias, etc.
 
