@@ -78,35 +78,35 @@ title: { display: true, text: 'Valor' }
 }
 
 function addSensorsToMap(sensors) {
-sensors.forEach(sensor => {
-if (!sensor.lat || !sensor.lng) return;
+    sensors.forEach(sensor => {
+        if (!sensor.lat || !sensor.lng) return;
 
-const marker = L.marker([sensor.lat, sensor.lng]).addTo(map);
+        const marker = L.marker([sensor.lat, sensor.lng]).addTo(map);
 
-marker.bindPopup(`
-<b>${sensor.nome || 'Sensor'}</b><br>
-ID: ${sensor.id}<br>
-<button onclick="loadSensor(${sensor.id})">Ver dados</button>
-`);
-});
+        marker.bindPopup(`
+            <b>${sensor.nome || 'Sensor'}</b><br>
+            ID: ${sensor.id}<br>
+            <button onclick="loadSensor(${sensor.id})">Ver dados</button>
+        `);
+    });
 }
 
 async function loadSensor(sensorId) {
-const data = await fetchSensorData(sensorId);
+    const data = await fetchSensorData(sensorId);
 
-const labels = data.map(d => d.timestamp);
-const values = data.map(d => d.valor);
+    const labels = data.map(d => d.timestamp);
+    const values = data.map(d => d.valor);
 
-createChart(labels, [{
-label: `Sensor ${sensorId}`,
-data: values,
-fill: false
-}]);
+    createChart(labels, [{
+        label: `Sensor ${sensorId}`,
+        data: values,
+        fill: false
+    }]);
 }
 
 async function init() {
-const sensors = await fetchSensors();
-addSensorsToMap(sensors);
+    const sensors = await fetchSensors();
+    addSensorsToMap(sensors);
 }
 
 init();
@@ -1192,5 +1192,7 @@ O Perplexity não conseguiu aceder ao conteúdo dos endpoints e pede mais inform
 Os outros LLMs geram código, mesmo sem terem acesso à estrutura de json retornada pelos endpoints.
 
 Alguns LLMs apresentam mais código que os outros, por exemplo, o Deepseek e o CoPilot.
+
+O código apresentado pelo chatGPT coloca dúvidas.
 
 Aqui, o Claude destaca-se dos restante LLMs.
