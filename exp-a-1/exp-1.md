@@ -114,6 +114,7 @@ Ao nível da API no geral:
 - Resolver a inconsistência de unidades (Wh vs. kWh) e padronizar a nomenclatura dos códigos (evitar sufixos numéricos opacos como 042858).
 
 ```
+
 O LLM mostra alguma informação sobre os passos que realizou para obter a resposta.
 
 Aparentemente, consegue aceder ao endpoint e obter o seu output.
@@ -122,17 +123,26 @@ Faz uma análise interessante, mas não encontra (menciona) os endpoints dispon�
 
 Pedi ao LLM para analisar o endpoint, para encontrar os endpoints de dados que são disponibilizados:
 
-Prompt
+```
+
+## Prompt
+
+```
 
 Analisando o endpoint apresentado, podes indicar quais são os endpoints de dados disponíveis?
+
 ```
 
 O LLM tentou aceder aos endpoints seguintes:
 
 Failed to fetch https://baze.cm-maia.pt/BaZe/api/
+
 Failed to fetch https://baze.cm-maia.pt/BaZe/api/api4s.php?serie=NHabit
+
 Failed to fetch https://baze.cm-maia.pt/BaZe/api/api4s.php?s=NHabit
+
 Failed to fetch https://baze.cm-maia.pt/BaZe/api/api4d.php?s=NHabit
+
 Failed to fetch https://baze.cm-maia.pt/BaZe/api/api4d.php
 
 Como não conseguiu aceder, deduziu que:
