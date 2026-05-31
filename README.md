@@ -14,7 +14,9 @@ Nas experiências realizadas foram usados os LLMs seguintes:
 - Copilot
 - Gemini
 
-Lista de experiências com todos os LLMs:
+## Experiências
+
+Lista de experiências usando todos os LLMs:
 - [exp-a 1](exp-a-1/exp-1.md): Análise autónoma do endpoint de dados api4s.
 - [exp-a 2](exp-a-2/exp-2.md): Análise autónoma do endpoint de dados api4gj.
 - [exp-a 3](exp-a-3/exp-3.md): Análise autónoma do endpoint de dados x4rt.
@@ -28,7 +30,7 @@ Lista de experiências com todos os LLMs:
 - exp 1:
 - exp 2:
 
-Lista de experiências com o Claude usando urls e endpoints de dados da plataforma Baze:
+Lista de experiências usando apenas o Claude e usando urls e endpoints de dados da plataforma Baze:
 - [exp c1](exp-c1/exp-c1.md): Utilização de um endpoint mais geral, para construção e apresentação de um dashboard do consumo de água no município.
 - [exp c2](exp-c2/exp-c2.md): Utilização explícita de um endpoint de dados, para construção e apresentação de um dashboard do consumo de água no município.
 - [exp c3](exp-c3/exp-c3.md): Utilização explicita de 3 endpoints de dados, para construção de uma representação (visualização) semelhante a uma já existente e disponibilizada pela plataforma Baze, Figura 2.
